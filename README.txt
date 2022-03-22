@@ -1,5 +1,4 @@
 Web page for controlling computercraft turtles
-Does not have any functioning code (Intended for an unreleased future script)
 
 --
 Enabling dark mode:
