@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            background-color: #2E3440;
+            color: #D8DEE9
+        }
+    </style>
+</body>
+<br>
+<h1>ComputerCraft Turtle</h1>
+<h4>Current coordinates: 0, 0, 0</h3>
+<button type="button" class="btn btn-primary">Up</button>
+<button type="button" class="btn btn-primary">Down</button>
+<br>
+<br>
+<button type="button" class="btn btn-primary">Forwards</button>
+<button type="button" class="btn btn-primary">Reverse</button>
+<button type="button" class="btn btn-primary">Left</button>
+<button type="button" class="btn btn-primary">Right</button>
+<br>
+<br>
+<br>
+<br>
+<p>
+    API Spec:
+    <br>
+    0.0.0.0/api/up  - Moves the turtle up
+    <br>
+    0.0.0.0/api/down  - Moves the turtle down
+    <br>
+    0.0.0.0/api/left  - Moves the turtle left
+    <br>
+    0.0.0.0/api/right  - Moves the turtle right
+    <br>
+    0.0.0.0/api/forwards  - Moves the turtle forwards
+    <br>
+    0.0.0.0/api/reverse  - Moves the turtle back
+    <br>
+    0.0.0.0/api/status/state  - Get coords
+    <br>
+    0.0.0.0/api/status/facing  - Get where the turtle is facing
+    <br>
+    <br>
+    Calling the API:
+    <br>
+    You can use curl to call any of the URLs above. All calls except state and facing will return nothing.
+    <br>
+    Calling an API: curl 0.0.0.0/api/up  - Moves the turtle up
+    <br>
+    <br>
+    API responses:
+    <br>
+    {"coords":"0, 0, 0"}  - state
+    <br>
+    {"facing":"south"}  - facing
+</p>
+</html>
